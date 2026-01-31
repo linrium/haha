@@ -13,7 +13,14 @@ export default async function Layout({
   })
 
   return (
-    <SidebarProvider>
+    <SidebarProvider
+      style={
+        {
+          "--sidebar-width": "calc(var(--spacing) * 50)",
+          "--header-height": "calc(var(--spacing) * 12)",
+        } as React.CSSProperties
+      }
+    >
       <AppSidebar user={session?.user} />
       <SidebarInset>
         <div className="p-4">{children}</div>
