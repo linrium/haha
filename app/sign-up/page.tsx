@@ -39,7 +39,6 @@ export default function Page() {
       onSubmit: formSchema,
     },
     onSubmit: async ({ value }) => {
-      await sleep(1000)
       const { data, error } = await authClient.signUp.email({
         email: value.email,
         password: value.password,
