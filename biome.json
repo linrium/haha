@@ -33,5 +33,12 @@
         "organizeImports": "on"
       }
     }
+  },
+  "javascript": {
+    "formatter": {
+      "indentStyle": "space",
+      "indentWidth": 2,
+      "semicolons": "asNeeded"
+    }
   }
 }
