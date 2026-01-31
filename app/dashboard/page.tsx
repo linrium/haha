@@ -5,8 +5,8 @@ import { Suspense } from "react"
 import { Button } from "@/components/ui/button"
 import { createPost, getPosts } from "@/lib/actions/posts"
 import { auth } from "@/lib/auth"
-import CreatePostForm from "./components/create-post-form"
-import Posts from "./components/posts"
+import CreatePostForm from "./_components/create-post-form"
+import Posts from "./_components/posts"
 
 export default async function Page() {
   const session = await auth.api.getSession({
